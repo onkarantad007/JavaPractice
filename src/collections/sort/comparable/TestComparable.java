@@ -33,10 +33,6 @@ public class TestComparable {
         stringList.forEach(i-> System.out.println(i));
 
 
-
-
-
-
         List<Emp> list = new ArrayList<>();
         list.add(new Emp(4,"b",20000));
         list.add(new Emp(6,"a",30000));
