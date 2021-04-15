@@ -14,12 +14,7 @@ public class Interfaces implements Jeep,Man {
 		System.out.println("bumble-bee is walking");		
 	}
 
-	
-
 }
-
-
-
 
 // interface are by default public and abstract
 interface Jeep{

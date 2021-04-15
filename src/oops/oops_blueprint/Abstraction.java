@@ -4,7 +4,7 @@ public class Abstraction {
 
 	public static void main(String[] args) {
 		
-		Audi a1 = new Audi();
+		Car a1 = new Audi();
 		a1.start();
 
 	}
@@ -40,15 +40,15 @@ class BMW extends Car{
 
 //class Car{
 //	int price;
-//	
+//
 //	void start() {
 //		System.out.println("car is starting");
 //	}
 //}
 
-abstract class Car{
+ abstract class Car{
 	int price;
-	
+
 	abstract void start();
 }
 
