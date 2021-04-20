@@ -6,7 +6,7 @@ public class LlistStack {
 		int data;
 		Node next;
 
-		public Node(int value) {
+		public Node(int data) {
 			this.data = data;
 		}
 
@@ -22,12 +22,12 @@ public class LlistStack {
 	public void push(int x)
 	{
 		Node temp=new Node(x);
-		if(temp==null)
+		if(isEmpty())
 		{
-			System.out.print("\nHeap Overflow");
+//			System.out.print("\nHeap Overflow");
+			top = temp;
 			return;
 		}
-
 		temp.next=top;
 		top=temp;
 	}
@@ -52,7 +52,7 @@ public class LlistStack {
 	{
 		if(isEmpty())
 		{
-			 System.out.print("\nStack Underflow"); 
+			 System.out.println("Stack Underflow");
 	            return; 
 		}
 		top=top.next;
@@ -62,12 +62,12 @@ public class LlistStack {
 	public void Display()
 	{
 		if(isEmpty())
-			 System.out.printf("\nStack Underflow");
+			 System.out.println("Stack Underflow");
 		else {
 			Node curr=top;
 			while(curr!=null)
 			{
-				 System.out.printf("%d->", curr.data);
+				 System.out.println("|"+curr.data+"|");
 				 curr=curr.next;
 			}
 		}
