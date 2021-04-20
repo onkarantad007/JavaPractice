@@ -6,7 +6,8 @@ class CounterUnsafe{
         count++;
     }
 }
-// t1 and t2 will work on CounterUnsafe increment() method simultaneously and count will not reach till 2000
+// t1 and t2 will work on CounterUnsafe increment()
+// method simultaneously and count will not reach till 2000
 
 class CounterSafe{
     int count;
@@ -14,7 +15,8 @@ class CounterSafe{
         count++;
     }
 }
-// if t3 working on increment() of CounterSafe then t4 will wait and if t4 is working on increment() of CounterSafe then t3 will wait
+// if t3 working on increment() of CounterSafe then t4 will wait and if t4 is working on increment()
+// of CounterSafe then t3 will wait
 // so counter will reach till 2000
 // because of  synchronized keyword
 

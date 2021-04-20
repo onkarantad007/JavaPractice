@@ -12,13 +12,22 @@ public class Outer {
 
 
     public static void show(){
-//        System.out.println("o1" + o1);
-        System.out.println("o2 : " + o2);
-
+//        System.out.println("o1" + o1);   // not accessable (o1 is not static)
+        System.out.println("o1" + new Outer(111));
+        //or
         Outer outer = new Outer(111);
+        System.out.println("o1" + outer);
+
+        System.out.println("o2 : " + o2); // accessable (o2 is static)
+
+
+//        System.out.println("i1 : " + inner.i1); // not accessable (i1 is not static)
+        System.out.println("i1 : " + outer.new Inner(234));
+        //OR
         Outer.Inner inner= outer.new Inner(234);
+        System.out.println("i1 : " + inner);
 
-
+        System.out.println("i2 : " + inner.i2); // accessable (i2 is static)
 
     }
     public void display(){

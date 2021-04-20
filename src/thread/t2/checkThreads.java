@@ -40,8 +40,8 @@ public class checkThreads {
 
         System.out.println("Main thrd executing");
         // main thrd wont wait for other thread to stop and execute alongside with the other thrd
-        // to make main thrd to wait join() method is used on other thrd so before the after
-        // other thrd complete its execution main thrd will execute
+        // to make main thrd to wait join() method is used on other thrd so before the
+        // after other thrd complete its execution main thrd will execute
         // join method is checked exception so we have to us e throws
     }
 }

@@ -10,11 +10,13 @@ public class Sorting {
 
 	public static void selectionSort(int[] arr) {
 		System.out.println("in selection sort");
-		for (selPos = 0; selPos < arr.length - 1; selPos++) {
+		for (selPos = 0; selPos < arr.length - 1 && flag == true; selPos++) {
+			flag=false;
 			iteration++;
 			for (pos = selPos + 1; pos < arr.length; pos++) {
 				comparison++;
 				if (arr[pos] < arr[selPos]) {
+					flag = true;
 					swap(arr, pos, selPos);
 //					 int t = arr[selPos]; arr[selPos] = arr[pos]; arr[pos] = t;	 
 				}
@@ -45,10 +47,7 @@ public class Sorting {
 		System.out.println("comparison : " + comparison);
 	}
 
-	
-	
-	
-	
+
 	
 	public static void insertionSort(int[] arr) {
 		System.out.println("in insertion sort sort ");
@@ -57,10 +56,10 @@ public class Sorting {
 			int j=i-1;
 			iteration++;
 			
-		while(j >=0 && key<arr[j]) {
+		while(j >=0 && arr[j] > key) {
 			arr[j+1]=arr[j];
-			j--;
 			comparison++;
+			j--;
 		}
 		arr[j+1]=key;
 		}

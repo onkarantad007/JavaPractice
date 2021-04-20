@@ -26,7 +26,7 @@ public class checkThreads {
         One t1 = new One();
         Two t2 = new Two();
         // One and Two extend from Thread so it is (is a relationship)
-        // One is a thread and Two s a thread
+        // One is a thread and Two is a thread
         // so reference t1 an t2 is also referring thread
         t1.start();
         try { Thread.sleep(10); }catch (Exception e){};
@@ -37,8 +37,8 @@ public class checkThreads {
 
         System.out.println("Main thrd executing");
         // main thrd wont wait for other thread to stop and execute alongside with the other thrd
-        // to make main thrd to wait join() method is used on other thrd so before the after
-        // other thrd complete its execution main thrd will execute
-        // join method is checked exception so we have to us e throws
+        // to make main thrd to wait , join() method is used on other thrd
+        // after one,two thrd complete its execution main thrd will execute
+        // sleep method is checked exception so we have to us e throws
     }
 }

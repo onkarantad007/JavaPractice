@@ -1,15 +1,15 @@
 package thread.t4;
 
-
-
 public class checkThreads {
     public static void main(String[] args) throws Exception{
+
         Runnable t1 = () -> {
                 for (int i=0 ; i<5 ; i++){
                     System.out.println("first thrd executing");
                     try { Thread.sleep(500); }catch (Exception e){};
                 }
             };
+
         Runnable t2 = () -> {
                 for (int i=0 ; i<5 ; i++){
                     System.out.println("second thrd executing");

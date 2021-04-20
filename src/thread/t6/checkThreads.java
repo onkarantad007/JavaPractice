@@ -23,11 +23,10 @@ public class checkThreads {
 
 
 
-
-
-
         //th1.setName("-------------- THREAD 1 --------------");
         //th2.setName("-------------- THREAD 2 --------------");
+
+
         System.out.println(th1.getName());
         System.out.println(th2.getName());
 

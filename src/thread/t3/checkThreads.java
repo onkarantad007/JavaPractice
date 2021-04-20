@@ -1,7 +1,6 @@
 package thread.t3;
 
 
-
 public class checkThreads {
     public static void main(String[] args) throws Exception{
         Runnable t1 = new Runnable() { //anonymous class

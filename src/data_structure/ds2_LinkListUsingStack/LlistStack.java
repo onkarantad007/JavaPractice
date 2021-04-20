@@ -5,6 +5,11 @@ public class LlistStack {
 	class Node{
 		int data;
 		Node next;
+
+		public Node(int value) {
+			this.data = data;
+		}
+
 	}
 
 	Node top;
@@ -16,14 +21,13 @@ public class LlistStack {
 	@SuppressWarnings("unused")
 	public void push(int x)
 	{
-		Node temp=new Node();
+		Node temp=new Node(x);
 		if(temp==null)
 		{
 			System.out.print("\nHeap Overflow");
 			return;
 		}
-		
-		temp.data=x;
+
 		temp.next=top;
 		top=temp;
 	}

@@ -12,11 +12,7 @@ public class BSTree {
 	public BSTree(){
 		root=null;
 	}
-	
-	
-	
-	
-	
+
 	public void insert(int elem) {
 		
 		BTNode curr = root;
@@ -61,7 +57,6 @@ public class BSTree {
 				curr=curr.rChild;
 			}
 		}
-		
 			if(curr==null) {
 				return false;
 			}	
@@ -85,10 +80,8 @@ public class BSTree {
 			inOrder(node.rChild);
 		}
 	}
-	
-	
-	
-	
+
+
 	public void print() {
 		inOrder(root);
 	}

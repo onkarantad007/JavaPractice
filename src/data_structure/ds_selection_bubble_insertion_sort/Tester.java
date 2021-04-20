@@ -4,12 +4,12 @@ public class Tester {
 
 	public static void main(String[] args) {
 		
-		int[] arr = new int[] {1,2,3,4,5};
+		int[] arr = new int[] {6,4,2,3};
 		System.out.println("size : " + arr.length);
 		Sorting.display(arr);
-//		Sorting.selectionSort(arr);
+//		Sorting.selectionSort(arr);  //itr=6 , comp=21
 //		Sorting.bubbleSort(arr);
-//		Sorting.insertionSort(arr);
+		Sorting.insertionSort(arr);
 		Sorting.display(arr);
 
 	}
