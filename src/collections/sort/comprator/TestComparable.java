@@ -62,8 +62,8 @@ public class TestComparable {
 
 
 
-        // Lambda Expression
-//        Collections.sort(list,(e1, e2) -> {
+//         Lambda Expression
+//        Collections.sort(list,(Emp e1, Emp e2) -> {
 //            return e1.getId()- e2.getId();
 //        });
 

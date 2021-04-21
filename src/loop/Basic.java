@@ -129,18 +129,23 @@ public class Basic {
                     break;
 
                 case 7:
-//                    System.out.print("enter string : ");
-//                    boolean vowelOrNot=false;
-//                    str = sc.next();
-//                    char[] ch = str.toCharArray();
-//                    for (int i=0 ; i< ch.length ; i++) {
-//                        if(ch[i]==('a'|'e'|'i'|'o'|'u'))
-//                        {
-//                            vowelOrNot=true;
-//                        }
-//                    }
-//                    System.out.println(vowelOrNot);
-//                    break;
+                    System.out.print("enter string : ");
+                    boolean vowelOrNot=false;
+                    str = sc.next();
+                    char[] ch = str.toCharArray();
+                    for (int i=0 ; i< ch.length ; i++) {
+                        if (
+                                str.charAt(i) == 'A' || str.charAt(i) == 'a' ||
+                                str.charAt(i) == 'E' || str.charAt(i) == 'e' ||
+                                str.charAt(i) == 'I' || str.charAt(i) == 'i' ||
+                                str.charAt(i) == 'O' || str.charAt(i) == 'o' ||
+                                str.charAt(i) == 'U' || str.charAt(i) == 'u'    )
+                            vowelOrNot = true;
+
+                    }
+                    System.out.println("vowelOrNot" + vowelOrNot);
+
+                    break;
 
                 case 8:
                     boolean oddOrNot=true;
