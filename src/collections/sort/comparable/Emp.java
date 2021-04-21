@@ -40,7 +40,7 @@ public class Emp implements Comparable<Emp> {
         return "\nEmp{" + "id=" + id + ", name=" + name  + ", salary=" + salary + "}\n";
     }
 
-    @Override
+     @Override
     public int compareTo(Emp e) {
 //        return this.id-e.id;
 //        return this.name.compareTo(e.name);
