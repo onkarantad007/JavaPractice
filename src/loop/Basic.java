@@ -143,8 +143,8 @@ public class Basic {
                             vowelOrNot = true;
 
                     }
-                    System.out.println("vowelOrNot" + vowelOrNot);
-
+                    System.out.println("vowelOrNot : " + vowelOrNot);
+                    System.out.println("vowelOrNot : " + str.toLowerCase().matches(".*[a,e,i,o,u].*"));
                     break;
 
                 case 8:

@@ -50,7 +50,7 @@ public class TestComparable {
 //        while (itr.hasNext()){
 //            System.out.println(itr.next());
 //        }
-//
+
 //        System.out.println("forEach");
 //        list.forEach(i->{
 //            System.out.println(i);
